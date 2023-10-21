@@ -313,7 +313,7 @@ if [ ! -d wine ]; then
 	exit 1
 fi
 
-patch -d wine -Np1 < ./termux.patch
+patch -d wine -Np1 < "${scriptdir}"/termux.patch
 
 cd wine || exit 1
 dlls/winevulkan/make_vulkan
